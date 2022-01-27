@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  rust:
+    image: rust:1.58
+    working_dir: /usr/src/app
+    tty: true
+    volumes:
+      - ./src:/usr/src/app
